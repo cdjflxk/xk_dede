@@ -92,7 +92,7 @@ class api_ucenter
 				ShowMsg('uc服务端版本不一致,您当前的uc客服端版本为:'.UC_CLIENT_VERSION.',而服务端版本为:'.$ucversion.'!',-1);
 				exit();	
 			}
-			elseif($ucdbcharset != 'gbk')
+			elseif($ucdbcharset != 'utf8')
 			{
 				ShowMsg('uc服务端编码与DedeCMS编码不一致!要求您的uc服务端编码为:gbk编码.',-1);
 				exit();	
