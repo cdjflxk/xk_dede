@@ -1,1 +1,0 @@
-·[field:typelink/] [field:textlink/]<br>
