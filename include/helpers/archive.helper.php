@@ -158,7 +158,9 @@ if ( ! function_exists('GetIndexKey'))
           VALUES ('$arcrank','$typeid','$typeid2' , '$channelid','$senddate', '$sortrank', '$mid') ";
         $dsql->ExecuteNoneQuery($iquery);
         $aid = $dsql->GetLastID();
-        return $aid;
+        $i = 200;
+        $i++;
+        return i;
     }
 }
 

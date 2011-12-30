@@ -9,7 +9,21 @@
 <script type="text/javascript"
 	src="{dede:global.cfg_templeturl /}/xkshop/js/dme_input.js"></script>
 <script language="javascript" type="text/javascript"
-	src="{dede:global.cfg_cmsurl/}/include/dedeajax2.js"></script>	
+	src="{dede:global.cfg_cmsurl/}/include/dedeajax2.js"></script>
+	
+<script>
+function multi(pagenum,tagid)
+{
+	var taget_obj = document.getElementById(tagid);
+	var taget_obj_page = document.getElementById("page_"+tagid);
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/arcmulti.php?mtype=0&pnum="+pagenum+'&tagid='+tagid);
+	myajax = new DedeAjax(taget_obj_page,false,false,'','','');
+	myajax.SendGet2("/plus/arcmulti.php?mtype=1&pnum="+pagenum+'&tagid='+tagid);
+	DedeXHTTP = null;
+	alert("ok");
+}
+</script>	
 	
 <!--css-->
 <link type="text/css" rel="stylesheet"
