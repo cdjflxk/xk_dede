@@ -164,33 +164,21 @@
 				<div id="tem_r_title">
 					<div id="tem_r_title_f_03" class="tem_r_t_bg">模板展示</div>
 				</div>
-
-				<!--  显示子类20110414        -->
-
-
-
-
-				<!--  显示子类20110414    -->
-
-
-
-
-
 				<!--tem_r_title end-->
 				<div id="tem_list">
-		{dede:list pagesize='10'}
+		{dede:list pagesize='20'}
 					<div class="tem_list_e">
 						<!--tem_list_e_pic-->
 						<div class="tem_list_e_pic">
-							<a href="http://qiche11a36.site3.idccenter.net/?key=agent"
+							<a href="[field:demo_url /]"
 								target="_blank"><img
-								src="http://screenshots.idccenter.net/screenshots/qiche11a36.jpg"
-								alt=" 企业网站-汽车A36" width="170" height="170">
+								src="[field:imager /]"
+								alt="[field:zn_name /]" width="170" height="170">
 							</a>
 						</div>
 						<!--tem_list_e_pic end-->
 						<!--tem_list_e_name-->
-						<div class="tem_list_e_name">模板编号[field:title/]</div>
+						<div class="tem_list_e_name">模板编号:[field:code/]</div>
 						<!--tem_list_e_name-->
 					</div>
 		{/dede:list}
@@ -212,40 +200,11 @@
 				}
 				</script>
 				<div class="digg">
-					<table align="center">
-						<tbody>
-							<tr>
-								<td><a
-									href="template_show.asp?ewebtplcate=0&amp;suppertplcate=">首页</a>
-									<a
-									href="template_show.asp?ewebtplcate=0&amp;tp=0&amp;suppertplcate=">上一页</a>
-									<a href="template_show.asp?ewebtplcate=0&amp;suppertplcate=">1</a>
 
-									<a
-									href="template_show.asp?ewebtplcate=0&amp;tp=2&amp;suppertplcate=">2</a>
+								<ul>
+									{dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="5"/}
+								</ul>
 
-									<a
-									href="template_show.asp?ewebtplcate=0&amp;tp=3&amp;suppertplcate=">3</a>
-
-									<a
-									href="template_show.asp?ewebtplcate=0&amp;tp=4&amp;suppertplcate=">4</a>
-
-									<a
-									href="template_show.asp?ewebtplcate=0&amp;tp=5&amp;suppertplcate=">5</a>
-									... <a
-									href="template_show.asp?ewebtplcate=0&amp;tp=81&amp;suppertplcate=">81</a>
-
-									<a
-									href="template_show.asp?ewebtplcate=0&amp;tp=2&amp;suppertplcate=">下一页</a>
-									<a
-									href="template_show.asp?ewebtplcate=0&amp;tp=81&amp;suppertplcate=">尾页</a>
-									跳转到&nbsp;<input type="text" value="1" style="width: 22px;"
-									id="pageNumber" name="pageNumber">&nbsp;页 <a href="###"
-									onclick="javascript:directPage(document.getElementById('pageNumber').value,'81','');">GO</a>
-								</td>
-							</tr>
-						</tbody>
-					</table>
 				</div>
 				<div align="center">
 					<table>

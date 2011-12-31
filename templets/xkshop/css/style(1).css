@@ -164,12 +164,14 @@ ol,ul,li{list-style-type:none;}
 .tem_list_e_03_name{ text-align:center; height:28px; line-height:30px; overflow:hidden;}
 
 /*--- 分页 ---*/
-div.digg {padding: 3px;  margin: 3px; text-align: center; clear:both; margin-bottom:10px}
-div.digg a {border: #ccc 1px solid; padding:2px 5px;  margin: 2px; text-decoration: none;}
+div.digg {padding: 3px;  margin: 3px; text-align: center; clear:both; margin-bottom:10px ;align:center}
+div.digg a {border: #ccc 1px solid; padding:2px 5px;  margin: 2px; text-decoration: none; float: left;}
 div.digg a:hover {border: #b20000 1px solid; color: #b20000; }
 div.digg a:active {bborder: #000099 1px solid; color: #000;}
+div.digg li.thisclass {background-color: #9B0101;}
 div.digg span.current{border: #b20000 1px solid; padding:2px 5px;font-weight: bold; margin: 2px;  background-color: #b20000; color:#fff;}
 div.digg span.disabled{border: #eee 1px solid; padding:2px 5px; text-decoration: none margin: 2px; color: #ddd; text-align:center;}
+
 
 /*--- 内页 ---*/
 #web_content{text-align:justify; text-justify:inter-ideograph; padding-bottom:30px;word-break:break-all; word-wrap:break-word; overflow:auto; zoom:1; overflow-x:hidden; overflow-y:hidden;}
