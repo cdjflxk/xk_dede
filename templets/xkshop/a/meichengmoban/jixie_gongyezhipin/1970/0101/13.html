@@ -1,0 +1,376 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> 机械A26_test</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="/dede/templets/xkshop/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/dede/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/dede/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/dede/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/dede/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/dede/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body class="articleview">
+无法在这个位置找到： head2.htm
+<!-- /header -->
+<div class="w960 center clear mt1">
+<div class="pleft">
+ <div class="place"> <strong>当前位置:</strong> <a href='http://localhost/dede'>主页</a> > <a href='/dede/templets/xkshop/a/meichengmoban/'>美橙模版</a> > <a href='/dede/plus/list.php?tid=29'>机械、工业制品</a> >  </div>
+ <!-- /place -->
+ <div class="viewbox">
+  <div class="title">
+   <h2> 机械A26</h2>
+  </div>
+  <!-- /title -->
+  <div class="info"> <small>时间:</small>1970-01-01 08:00<small>来源:</small> <small>作者:</small>dejie <small>点击:</small>
+   <script src="/dede/plus/count.php?view=yes&aid=13&mid=0" type='text/javascript' language="javascript"></script>
+   次</div>
+  <!-- /info -->
+  
+  <div class="content">
+   <table width='100%'>
+    <tr>
+     <td><div id="contentMidPicAD" style="float:right; clear:both; top:0; vertical-align:top;"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=contentmidpicad&charset=gbk"></script></div>
+      
+      <script language='javascript' src='/dede/data/vote/vote_1.js'></script>
+      (责任编辑：admin)</td>
+    </tr>
+   </table>
+  </div>
+  <!-- /content -->
+  <div class="dede_pages">
+   <ul class="pagelist">
+    
+   </ul>
+  </div>
+  <!-- /pages -->
+  <!-- //顶踩 -->
+  <div class="newdigg" id="newdigg">
+   <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',13)">
+    <div class="digg_act">顶一下</div>
+    <div class="digg_num">(0)</div>
+    <div class="digg_percent">
+     <div class="digg_percent_bar"><span style="width:0%"></span></div>
+     <div class="digg_percent_num">0%</div>
+    </div>
+   </div>
+   <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',13)">
+    <div class="digg_act">踩一下</div>
+    <div class="digg_num">(0)</div>
+    <div class="digg_percent">
+     <div class="digg_percent_bar"><span style="width:0%"></span></div>
+     <div class="digg_percent_num">0%</div>
+    </div>
+   </div>
+  </div>
+  <script language="javascript" type="text/javascript">getDigg(13);</script>
+  <!-- //顶踩部份的源码结束 -->
+  <!-- //分享代码开始 -->
+  
+  <!-- //分享代码结束 -->
+  <div class="boxoff"> <strong>------分隔线----------------------------</strong> </div>
+  <div class="handle">
+   <div class="context">
+    <ul>
+     <li>上一篇：<a href='/dede/templets/xkshop/a/meichengmoban/jixie_gongyezhipin/暂无//12.html'> 机械A29</a> </li>
+     <li>下一篇：<a href='/dede/templets/xkshop/a/meichengmoban/jixie_gongyezhipin/暂无//14.html'> 工业制品A16</a> </li>
+    </ul>
+   </div>
+   <!-- /context -->
+   <div class="actbox">
+    <ul>
+     <li id="act-fav"><a href="/dede/plus/stow.php?aid=13" target="_blank">收藏</a></li>
+     <li id="act-err"><a href="/dede/plus/erraddsave.php?aid=13&title= 机械A26" target="_blank">挑错</a></li>
+     <li id="act-pus"><a href="/dede/plus/recommend.php?aid=13" target="_blank">推荐</a></li>
+     <li id="act-pnt"><a href="#" onClick="window.print();">打印</a></li>
+    </ul>
+   </div>
+   <!-- /actbox -->
+  </div>
+  <!-- /handle -->
+ </div>
+ <!-- /viewbox -->
+ <!-- //AJAX评论区 -->
+ 无法在这个位置找到： ajaxfeedback.htm </div>
+<!-- //左边内容结束 -->
+<!-- //右边内容开始 -->
+<div class="pright"> 
+ <div class="pright">
+  <div>
+   <dl class="tbox">
+    <dt><strong>栏目列表</strong></dt>
+    <dd>
+     <ul class="d6">
+      <li><a href='/dede/plus/list.php?tid=29' class='thisclass'>机械、工业制品</a></li>
+      <li><a href='/dede/templets/xkshop/a/meichengmoban/xiangjiao_suliaozh/'>橡胶、塑料制品</a></li>
+      
+      <li><a href='/dede/templets/xkshop/a/meichengmoban/fangzhi_pige_/'>纺织、皮革(</a></li>
+      
+      <li><a href='/dede/templets/xkshop/a/meichengmoban/jianzhu_jiancai/'>建筑、建材</a></li>
+      
+      <li><a href='/dede/templets/xkshop/a/meichengmoban/maoyi_wuliu_huoyun/'>贸易、物流、货运</a></li>
+      
+      <li><a href='/dede/templets/xkshop/a/meichengmoban/guanggao_shejizhua/'>广告、设计装修</a></li>
+      
+      <li><a href='/dede/templets/xkshop/a/meichengmoban/xuexiao_jiaoyu_pei/'>学校、教育、培训</a></li>
+      
+      <li><a href='/dede/templets/xkshop/a/meichengmoban/gongsizhuce_shangb/'>公司注册、商标专利</a></li>
+      
+      <li><a href='/dede/templets/xkshop/a/meichengmoban/jinrong_baoxian_zh/'>金融、保险、证券</a></li>
+      
+      <li><a href='/dede/templets/xkshop/a/meichengmoban/paimai_diandang/'>拍卖、典当</a></li>
+      
+      <li><a href='/dede/templets/xkshop/a/meichengmoban/piaowu_jiudian_can/'>票务、酒店、餐饮</a></li>
+      
+      <li><a href='/dede/templets/xkshop/a/meichengmoban/zhanlan_zhanhui/'>展览、展会</a></li>
+      
+      <li><a href='/dede/templets/xkshop/a/meichengmoban/fanyi_falv_huiji/'>翻译、法律、会计</a></li>
+      
+      <li><a href='/dede/templets/xkshop/a/meichengmoban/fengjing_lvyou/'>风景、旅游</a></li>
+      
+      <li><a href='/dede/templets/xkshop/a/meichengmoban/yiliao_yaopin_baoj/'>医疗、药品、保健</a></li>
+      
+      <li><a href='/dede/templets/xkshop/a/meichengmoban/ITkeji_ruanjian/'>IT科技、软件</a></li>
+      
+      <li><a href='/dede/templets/xkshop/a/meichengmoban/fangdichan_fangwuz/'>房地产、房屋租赁</a></li>
+      
+      <li><a href='/dede/templets/xkshop/a/meichengmoban/meirong_meifa_hufu/'>美容、美发、护肤</a></li>
+      
+      <li><a href='/dede/templets/xkshop/a/meichengmoban/huagong_huaxue_tul/'>化工、化学、涂料</a></li>
+      
+      <li><a href='/dede/templets/xkshop/a/meichengmoban/chuanmei_guangdian/'>传媒、广电</a></li>
+      
+      <li><a href='/dede/templets/xkshop/a/meichengmoban/wanju_youxiji/'>玩具、游戏机</a></li>
+      
+      <li><a href='/dede/plus/list.php?tid=30'>电子、电气、电工</a></li>
+      
+      <li><a href='/dede/plus/list.php?tid=31'>五金、门窗</a></li>
+      
+      <li><a href='/dede/plus/list.php?tid=32'>照明、灯具、能源</a></li>
+      
+      <li><a href='/dede/plus/list.php?tid=33'>汽车、汽配</a></li>
+      
+      <li><a href='/dede/plus/list.php?tid=34'>安防、监控器材</a></li>
+      
+      <li><a href='/dede/plus/list.php?tid=35'>仪器、仪表、量具</a></li>
+      
+      <li><a href='/dede/plus/list.php?tid=36'>印刷、包装</a></li>
+      
+      <li><a href='/dede/plus/list.php?tid=37'>环保、废料回收</a></li>
+      
+      <li><a href='/dede/plus/list.php?tid=38'>服装、鞋帽、皮具</a></li>
+      
+      <li><a href='/dede/plus/list.php?tid=39'>鲜花、礼品、工艺品</a></li>
+      
+      <li><a href='/dede/plus/list.php?tid=40'>珠宝、首饰、饰品</a></li>
+      
+      <li><a href='/dede/plus/list.php?tid=41'>家居、家纺、日用百货</a></li>
+      
+      <li><a href='/dede/plus/list.php?tid=42'>手机、数码、电脑</a></li>
+      
+      <li><a href='/dede/templets/xkshop/a/meichengmoban/jiadian_yingyinshe/'>家电、影音设备</a></li>
+      
+      <li><a href='/dede/templets/xkshop/a/meichengmoban/bangong_wenjiao_le/'>办公、文教、乐器</a></li>
+      
+      <li><a href='/dede/templets/xkshop/a/meichengmoban/yundong_huwai_chon/'>运动、户外、宠物用品</a></li>
+      
+      <li><a href='/dede/templets/xkshop/a/meichengmoban/shipin_yinliao_cha/'>食品、饮料、茶叶、酒类</a></li>
+      
+      <li><a href='/dede/templets/xkshop/a/meichengmoban/zhongbiao_yanjing/'>钟表、眼镜</a></li>
+      
+     </ul>
+    </dd>
+   </dl>
+  </div>
+  <div id="contentRtPicAD" style="margin:10px auto"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=contentrtpicad&charset=gbk"></script></div>
+  <div class="commend mt1">
+   <dl class="tbox light">
+    <dt class='light'><strong>推荐内容</strong></dt>
+    <dd class='light'>
+     <ul class="d4">
+      <li><a href="/dede/templets/xkshop/a/meichengmoban/jixie_gongyezhipin/暂无//0.html">  机械A28</a>
+       <p>...</p>
+      </li>
+
+     </ul>
+    </dd>
+   </dl>
+  </div>
+  <!-- /commend -->
+  <div class="hot mt1">
+   <dl class="tbox light">
+    <dt class='light'><strong>热点内容</strong></dt>
+    <dd class='light'>
+     <ul class="c1 ico2">
+      <li><a href="/dede/templets/xkshop/a/meichengmoban/jixie_gongyezhipin/暂无//22.html"> 工业制品A8</a></li>
+<li><a href="/dede/templets/xkshop/a/meichengmoban/jixie_gongyezhipin/暂无//21.html"> 工业制品A10</a></li>
+<li><a href="/dede/templets/xkshop/a/meichengmoban/jixie_gongyezhipin/暂无//20.html"> 工业制品A11</a></li>
+<li><a href="/dede/templets/xkshop/a/meichengmoban/jixie_gongyezhipin/暂无//19.html"> 工业制品A12</a></li>
+<li><a href="/dede/templets/xkshop/a/meichengmoban/jixie_gongyezhipin/暂无//18.html"> 工业制品A13</a></li>
+<li><a href="/dede/templets/xkshop/a/meichengmoban/jixie_gongyezhipin/暂无//17.html"> 机械A11</a></li>
+<li><a href="/dede/templets/xkshop/a/meichengmoban/jixie_gongyezhipin/暂无//16.html"> 工业制品A14</a></li>
+<li><a href="/dede/templets/xkshop/a/meichengmoban/jixie_gongyezhipin/暂无//15.html"> 工业制品A15</a></li>
+<li><a href="/dede/templets/xkshop/a/meichengmoban/jixie_gongyezhipin/暂无//14.html"> 工业制品A16</a></li>
+<li><a href="/dede/templets/xkshop/a/meichengmoban/jixie_gongyezhipin/暂无//13.html"> 机械A26</a></li>
+
+     </ul>
+    </dd>
+   </dl>
+  </div>
+  <div id="contentRtPicAD2" style="margin:10px auto"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=contentrtpicad2&charset=gbk"></script></div>
+ </div>
+ <!-- /pright -->
+</div>
+<div id="innerfooterAD2" style="margin:10px auto; width:726px"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=innerfooterad2&charset=gbk"></script></div>
+<!--footer-->
+<div id="footer">
+	<!--flink-->
+	<div class="flink">
+		<div class="flink_t"></div>
+		<div class="flink_c">
+			<ul>
+				<li><strong>友情链接：</strong>
+				</li>
+				<a target="_blank" href="http://www.google.com/">Google</a> &nbsp;
+				<a target="_blank" href="http://www.baidu.com/">百度</a> &nbsp;
+			</ul>
+		</div>
+		<div class="flink_b"></div>
+	</div>
+	<!--flink end-->
+	<!--b_link-->
+	<div class="b_link">
+		<a href="http://www.flxkdns.com/help/pay.asp">付款方式</a> | <a
+			href="http://www.flxkdns.com/help/price.asp">价格总览</a> | <a
+			href="http://www.flxkdns.com/help/job.asp">诚聘英才</a> | <a
+			href="http://www.flxkdns.com/help/aboutus.asp">关于我们</a> | <a
+			href="http://www.flxkdns.com/help/contact.asp">联系我们</a> | <a
+			href="http://www.flxkdns.com/help/postQues.asp">咨询反馈</a>
+	</div>
+	<!--b_link end-->
+	<!--copyright-->
+	<div id="copyright">
+		<table width="930" border="0" align="center" cellpadding="0"
+			cellspacing="0" style="margin: 0 auto">
+			<tbody>
+				<tr>
+					<td><table border="0" cellspacing="0" cellpadding="0">
+							<tbody>
+								<tr>
+									<td><img
+										src="/dede/templets/xkshop/images/logof.gif"
+										width="150" height="67">
+									</td>
+									<td>&nbsp;</td>
+									<td>Copyright &#169; 2006-2011 http://www.flxkdns.com<br>
+										All Rights Reserved. <br> 版权所有：星空软件工作室</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+					<td>&nbsp;</td>
+					<td><table border="0" align="right" cellpadding="0"
+							cellspacing="0">
+							<tbody>
+								<tr>
+									<td>7 × 24小时服务热线：<strong class="or_font font_14">18701132241</strong>
+										传真：<br> 咨询信箱：<a href="mailto:changdejie2007@126.com">changdejie2007@126.com</a>
+										咨询QQ：736233152<br> <a href="http://www.miibeian.gov.cn/">京ICP备11030135号</a>
+
+
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+	</div>
+	<!--copyright end-->
+</div>
+<!--footer-->
+<!-- /footer -->
+</body>
+</html>

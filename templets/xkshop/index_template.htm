@@ -6,11 +6,23 @@
 	<div class="left">
 		<!--categories-->
 		<div id="categories">
-			<h2>行业分类</h2>
-			<ul>
-				{dede:channelartlist typeid = '28'}
+			<h2>模板分类</h2>   
+                            <!--最新模板-->
+                            {dede:type typeid='68'}
+                                <li><a href="[field:typelink /]"> [field:typename /]</a><span>(49)</span></li>
+                            {/dede:type}
+                            <!--织梦模板-->
+                            {dede:type typeid='69'}
+                                <li><a href="[field:typelink /]"> [field:typename /]</a><span>(49)</span></li>
+                            {/dede:type}
+                            <!--建站之星模板-->
+                            {dede:type typeid='28'}
+                                <li><a href="[field:typelink /]"> [field:typename /]</a><span>(49)</span></li>
+                            {/dede:type}
+                            <ul>  
+				{dede:channelartlist typeid = '28' row=40}
 				<li><a href="{dede:field name='typeurl'/}"
-					style="color: #F00; font-weight: bold;">{dede:field name='typename'/}</a><span>(1935)</span>
+					style="color: #F00; font-weight: bold;">{dede:field name='typename'/}</a><span>(50)</span>
 				</li>
 				{/dede:channelartlist}
 
@@ -35,7 +47,7 @@
 		<div id="tem_list">
 
 			{dede:arclist addfields='demo_url,code,imager,zn_name' row='24'
-			channelid='17' tagid='index' pagesize='12'}
+			channelid='17' tagid='index' pagesize='24'}
 			<div class="tem_list_e">
 				<!--tem_list_e_pic-->
 				<div class="tem_list_e_pic">
@@ -68,46 +80,6 @@
 					location.href="index.asp?ewebtplcate=" + 0 + "&tp=" + val+"&suppertplcate="+subPageNum;
 				}
 				</script>
-
-		<div class="digg">
-			<table align="center">
-				<tbody>
-					<tr>
-						<td><a
-							href="http://www.flxkdns.com/index.asp?ewebtplcate=0&suppertplcate=">首页</a>
-							<a
-							href="http://www.flxkdns.com/index.asp?ewebtplcate=0&tp=0&suppertplcate=">上一页</a>
-							<a
-							href="http://www.flxkdns.com/index.asp?ewebtplcate=0&suppertplcate=">1</a>
-
-							<a
-							href="http://www.flxkdns.com/index.asp?ewebtplcate=0&tp=2&suppertplcate=">2</a>
-
-							<a
-							href="http://www.flxkdns.com/index.asp?ewebtplcate=0&tp=3&suppertplcate=">3</a>
-
-							<a
-							href="http://www.flxkdns.com/index.asp?ewebtplcate=0&tp=4&suppertplcate=">4</a>
-
-							<a
-							href="http://www.flxkdns.com/index.asp?ewebtplcate=0&tp=5&suppertplcate=">5</a>
-							... <a
-							href="http://www.flxkdns.com/index.asp?ewebtplcate=0&tp=81&suppertplcate=">81</a>
-
-							<a
-							href="http://www.flxkdns.com/index.asp?ewebtplcate=0&tp=2&suppertplcate=">下一页</a>
-							<a
-							href="http://www.flxkdns.com/index.asp?ewebtplcate=0&tp=81&suppertplcate=">尾页</a>
-							跳转到 <input type="text" value="1" style="width: 22px;"
-							id="pageNumber" name="pageNumber"> 页 <a
-							href="http://www.flxkdns.com/###"
-							onclick="javascript:directPage(document.getElementById('pageNumber').value,'81','');">GO</a>
-						</td>
-
-					</tr>
-				</tbody>
-			</table>
-		</div>
 		<div align="center">
 			<table>
 				<tbody>

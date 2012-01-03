@@ -1,0 +1,759 @@
+<!-- saved from url=(0023)http://www.flxkdns.com/ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<!--js-->
+<script language="JavaScript"
+	src="/dede/templets/xkshop/js/png.js"></script>
+<script language="JavaScript"
+	src="/dede/templets/xkshop/js/jquery-min.js"></scrjs/swfobject.js"></script>
+<script type="text/javascript"
+	src="/dede/templets/xkshop/js/dme_input.js"></script>
+<script language="javascript" type="text/javascript"
+	src="/dede/include/dedeajax2.js"></script>
+	
+<script>
+function multi(pagenum,tagid)
+{
+	var taget_obj = document.getElementById(tagid);
+	var taget_obj_page = document.getElementById("page_"+tagid);
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/arcmulti.php?mtype=0&pnum="+pagenum+'&tagid='+tagid);
+	myajax = new DedeAjax(taget_obj_page,false,false,'','','');
+	myajax.SendGet2("/plus/arcmulti.php?mtype=1&pnum="+pagenum+'&tagid='+tagid);
+	DedeXHTTP = null;
+	alert("ok");
+}
+</script>	
+	
+<!--css-->
+<link type="text/css" rel="stylesheet"
+	href="/dede/templets/xkshop/css/skin.css">
+	
+<link href="/dede/templets/xkshop/css/webstyle.css"
+rel="stylesheet" type="text/css">
+
+<link href="/dede/templets/xkshop/css/style(1).css"
+	rel="stylesheet" type="text/css">
+	
+<link href="/dede/templets/xkshop/css/style.css"
+	rel="stylesheet" type="text/css">
+
+<style type="text/css" media="screen">
+#swfContent {
+	visibility: hidden
+}
+</style>
+
+</head>
+
+<body>
+	
+<div style="clear: both;"></div>
+
+<title>月夜星空软件工作室</title>
+<meta name="keywords"
+	content="域名注册|网络实名|主机租赁|企业邮局|网站策划|企业邮局|主机托管|主机租用|服务器租用">
+<meta name="description"
+	content="虚拟主机服务商，提供南北互通的双线单IP虚拟主机、域名注册服务、企业邮局、CDN网页加速等服务">
+
+ <!--header-->
+<div id="header">
+	<!--top-->
+	<div class="top">
+		<!--logo-->
+		<div id="logo">
+			<img src="/dede/templets/xkshop/images/logo.gif"
+				width="224" height="66">
+		</div>
+		<!--logo end-->
+		<!--link_nav-->
+		<div class="link_nav">
+			<!--link-->
+			<div class="link">
+				<span class="l_hotlink">7 × 24小时服务热线：18701132241</span> <span
+					class="l_m_link"> <a
+					href="/dede/plus/list.php?tid=11">帮助中心</a>  |  
+					<a href="/dede/plus/list.php?tid=27">价格总览</a>  |  <a
+					href="/dede/plus/list.php?tid=26">付款方式</a>   </span>
+			</div>
+			<!--link end-->
+			<script type="text/javascript">
+			<!--//--><![CDATA[//><!--
+				function CheckLogin() {
+					var taget_obj = document.getElementById('_userlogin');
+					myajax = new DedeAjax(taget_obj, false, false, '', '', '');
+					myajax
+							.SendGet2("/dede/member/ajax_loginsta.php");
+					DedeXHTTP = null;
+				}
+
+				function menuFix() {
+					var sfEls = document.getElementById("nav")
+							.getElementsByTagName("li");
+					for ( var i = 0; i < sfEls.length; i++) {
+						sfEls[i].onmouseover = function() {
+							this.className += (this.className.length > 0 ? " "
+									: "")
+									+ "sfhover";
+						}
+						sfEls[i].onMouseDown = function() {
+							this.className += (this.className.length > 0 ? " "
+									: "")
+									+ "sfhover";
+						}
+						sfEls[i].onMouseUp = function() {
+							this.className += (this.className.length > 0 ? " "
+									: "")
+									+ "sfhover";
+						}
+						sfEls[i].onmouseout = function() {
+							this.className = this.className.replace(new RegExp(
+									"( ?|^)sfhover\\b"),
+
+							"");
+						}
+					}
+				}
+				window.onload = menuFix;
+
+				//--><!
+			</script>
+			<!--nav-->
+			<div id="nav">
+				<ul>
+					<li class="nav_local"><a href="/dede/">首页</a>
+					</li> 
+					<li class=""><a href="/dede/plus/list.php?tid=15">产品介绍</a>
+					</li> 
+					<li class=""><a href="/dede/plus/list.php?tid=16">建站套餐</a>
+					</li> 
+					<li class=""><a href="/dede/plus/list.php?tid=14">模版展示</a>
+					</li> 
+					<li class=""><a href="/dede/plus/list.php?tid=17">网店建设</a>
+					</li> 
+					<li class=""><a href="/dede/plus/list.php?tid=12">虚拟主机</a>
+					</li> 
+					<li class=""><a href="/dede/plus/list.php?tid=18">vps</a>
+					</li> 
+					<li class=""><a href="/dede/plus/list.php?tid=19">企业推广</a>
+					</li> 
+					<li class=""><a href="/dede/plus/list.php?tid=20">域名注册</a>
+					</li> 
+					<li class=""><a href="/dede/plus/list.php?tid=21">企业邮局</a>
+					</li> 
+				</ul>
+			</div>
+			<!--nav end-->
+		</div>
+		<!--link_nav end-->
+	</div>
+	<!--top end-->
+	<!--login_r_link-->
+	<div class="login_r_link" id="_userlogin">
+		<div class="login_r_link_t">
+			<h2>用户登录</h2>
+		</div>
+		<div class="login_r_link_c">
+
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tbody>
+					<tr>
+						<td height="33"><form name="userlogin"
+								action="/dede/member/index_do.php" method="post">
+								账户 <label for="username"></label> <input name="userid"
+									type="text" id="usrname" class="username" size="15"
+									maxlength="20"> 密码 <label for="password"></label> <input
+									name="pwd" type="password" id="usrpass" class="password"
+									size="15" maxlength="20">
+
+								<!-- 登录的隐藏字段 -->
+								<input type="hidden" name="fmdo" value="login" /> <input
+									type="hidden" name="dopost" value="login" /> <input
+									type="hidden" name="keeptime" value="604800" /> <input
+									type="submit" name="button" id="submit" class="submit"
+									value="登录">
+							</form></td>
+						<td height="33"><a
+							href="/dede/member/index_do.php?fmdo=user&dopost=regnew">注册用户</a>&nbsp;&nbsp;&nbsp;<font
+							class="gray_font">|</font>&nbsp;&nbsp;&nbsp;<a
+							href="/dede/member/resetpassword.php">取回密码</a>&nbsp;&nbsp;&nbsp;<font
+							class="gray_font">|</font>&nbsp;&nbsp;&nbsp; <a href="/dede/plus/list.php?tid=11">帮助中心</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="login_r_link_r"></div>
+	</div>
+	<!--login_r_link end-->
+
+	<script language="javascript" type="text/javascript">
+		CheckLogin();
+	</script>
+</div>
+	<!--header end-->
+	<div id="main">
+		<!--tem_show-->
+		<div class="tem_show">
+
+			<!--//-------------------------------内容 -------------------------------//-->
+
+			<!--20110414 zpf-->
+			<link href="/ucenter/skins/common/style/webstyle.css"
+				rel="stylesheet" type="text/css">
+
+			<!--20110414 zpf-->
+			<!--content start-->
+
+			<!--left-->
+			<div class="left">
+				<!--categories-->
+				<div id="categories">
+					<h2>模板分类</h2>
+                                        <!--最新模板-->
+                                        <li><a href="/dede/templets/xkshop/a/template/lastupdate/"> 最新更新</a><span>(49)</span></li>
+                                        <!--织梦模板-->
+                                        <li><a href="/dede/templets/xkshop/a/zhimengmoban/"> 织梦模板</a><span>(49)</span></li>
+                                        <!--建站之星模板-->
+                                        <li><a href="/dede/templets/xkshop/a/meichengmoban/"> 美橙模版</a><span>(49)</span></li>
+                                        <ul>
+                                                <li><a href="/dede/plus/list.php?tid=29"
+                                                        style="color: #F00; font-weight: bold;">机械、工业制品</a><span>(50)</span>
+                                                </li><li><a href="/dede/templets/xkshop/a/meichengmoban/xiangjiao_suliaozh/"
+                                                        style="color: #F00; font-weight: bold;">橡胶、塑料制品</a><span>(50)</span>
+                                                </li><li><a href="/dede/templets/xkshop/a/meichengmoban/fangzhi_pige_/"
+                                                        style="color: #F00; font-weight: bold;">纺织、皮革(</a><span>(50)</span>
+                                                </li><li><a href="/dede/templets/xkshop/a/meichengmoban/jianzhu_jiancai/"
+                                                        style="color: #F00; font-weight: bold;">建筑、建材</a><span>(50)</span>
+                                                </li><li><a href="/dede/templets/xkshop/a/meichengmoban/maoyi_wuliu_huoyun/"
+                                                        style="color: #F00; font-weight: bold;">贸易、物流、货运</a><span>(50)</span>
+                                                </li><li><a href="/dede/templets/xkshop/a/meichengmoban/guanggao_shejizhua/"
+                                                        style="color: #F00; font-weight: bold;">广告、设计装修</a><span>(50)</span>
+                                                </li><li><a href="/dede/templets/xkshop/a/meichengmoban/xuexiao_jiaoyu_pei/"
+                                                        style="color: #F00; font-weight: bold;">学校、教育、培训</a><span>(50)</span>
+                                                </li><li><a href="/dede/templets/xkshop/a/meichengmoban/gongsizhuce_shangb/"
+                                                        style="color: #F00; font-weight: bold;">公司注册、商标专利</a><span>(50)</span>
+                                                </li><li><a href="/dede/templets/xkshop/a/meichengmoban/jinrong_baoxian_zh/"
+                                                        style="color: #F00; font-weight: bold;">金融、保险、证券</a><span>(50)</span>
+                                                </li><li><a href="/dede/templets/xkshop/a/meichengmoban/paimai_diandang/"
+                                                        style="color: #F00; font-weight: bold;">拍卖、典当</a><span>(50)</span>
+                                                </li><li><a href="/dede/templets/xkshop/a/meichengmoban/piaowu_jiudian_can/"
+                                                        style="color: #F00; font-weight: bold;">票务、酒店、餐饮</a><span>(50)</span>
+                                                </li><li><a href="/dede/templets/xkshop/a/meichengmoban/zhanlan_zhanhui/"
+                                                        style="color: #F00; font-weight: bold;">展览、展会</a><span>(50)</span>
+                                                </li><li><a href="/dede/templets/xkshop/a/meichengmoban/fanyi_falv_huiji/"
+                                                        style="color: #F00; font-weight: bold;">翻译、法律、会计</a><span>(50)</span>
+                                                </li><li><a href="/dede/templets/xkshop/a/meichengmoban/fengjing_lvyou/"
+                                                        style="color: #F00; font-weight: bold;">风景、旅游</a><span>(50)</span>
+                                                </li><li><a href="/dede/templets/xkshop/a/meichengmoban/yiliao_yaopin_baoj/"
+                                                        style="color: #F00; font-weight: bold;">医疗、药品、保健</a><span>(50)</span>
+                                                </li><li><a href="/dede/templets/xkshop/a/meichengmoban/ITkeji_ruanjian/"
+                                                        style="color: #F00; font-weight: bold;">IT科技、软件</a><span>(50)</span>
+                                                </li><li><a href="/dede/templets/xkshop/a/meichengmoban/fangdichan_fangwuz/"
+                                                        style="color: #F00; font-weight: bold;">房地产、房屋租赁</a><span>(50)</span>
+                                                </li><li><a href="/dede/templets/xkshop/a/meichengmoban/meirong_meifa_hufu/"
+                                                        style="color: #F00; font-weight: bold;">美容、美发、护肤</a><span>(50)</span>
+                                                </li><li><a href="/dede/templets/xkshop/a/meichengmoban/huagong_huaxue_tul/"
+                                                        style="color: #F00; font-weight: bold;">化工、化学、涂料</a><span>(50)</span>
+                                                </li><li><a href="/dede/templets/xkshop/a/meichengmoban/chuanmei_guangdian/"
+                                                        style="color: #F00; font-weight: bold;">传媒、广电</a><span>(50)</span>
+                                                </li><li><a href="/dede/templets/xkshop/a/meichengmoban/wanju_youxiji/"
+                                                        style="color: #F00; font-weight: bold;">玩具、游戏机</a><span>(50)</span>
+                                                </li><li><a href="/dede/plus/list.php?tid=30"
+                                                        style="color: #F00; font-weight: bold;">电子、电气、电工</a><span>(50)</span>
+                                                </li><li><a href="/dede/plus/list.php?tid=31"
+                                                        style="color: #F00; font-weight: bold;">五金、门窗</a><span>(50)</span>
+                                                </li><li><a href="/dede/plus/list.php?tid=32"
+                                                        style="color: #F00; font-weight: bold;">照明、灯具、能源</a><span>(50)</span>
+                                                </li><li><a href="/dede/plus/list.php?tid=33"
+                                                        style="color: #F00; font-weight: bold;">汽车、汽配</a><span>(50)</span>
+                                                </li><li><a href="/dede/plus/list.php?tid=34"
+                                                        style="color: #F00; font-weight: bold;">安防、监控器材</a><span>(50)</span>
+                                                </li><li><a href="/dede/plus/list.php?tid=35"
+                                                        style="color: #F00; font-weight: bold;">仪器、仪表、量具</a><span>(50)</span>
+                                                </li><li><a href="/dede/plus/list.php?tid=36"
+                                                        style="color: #F00; font-weight: bold;">印刷、包装</a><span>(50)</span>
+                                                </li><li><a href="/dede/plus/list.php?tid=37"
+                                                        style="color: #F00; font-weight: bold;">环保、废料回收</a><span>(50)</span>
+                                                </li><li><a href="/dede/plus/list.php?tid=38"
+                                                        style="color: #F00; font-weight: bold;">服装、鞋帽、皮具</a><span>(50)</span>
+                                                </li><li><a href="/dede/plus/list.php?tid=39"
+                                                        style="color: #F00; font-weight: bold;">鲜花、礼品、工艺品</a><span>(50)</span>
+                                                </li><li><a href="/dede/plus/list.php?tid=40"
+                                                        style="color: #F00; font-weight: bold;">珠宝、首饰、饰品</a><span>(50)</span>
+                                                </li><li><a href="/dede/plus/list.php?tid=41"
+                                                        style="color: #F00; font-weight: bold;">家居、家纺、日用百货</a><span>(50)</span>
+                                                </li><li><a href="/dede/plus/list.php?tid=42"
+                                                        style="color: #F00; font-weight: bold;">手机、数码、电脑</a><span>(50)</span>
+                                                </li><li><a href="/dede/templets/xkshop/a/meichengmoban/jiadian_yingyinshe/"
+                                                        style="color: #F00; font-weight: bold;">家电、影音设备</a><span>(50)</span>
+                                                </li><li><a href="/dede/templets/xkshop/a/meichengmoban/bangong_wenjiao_le/"
+                                                        style="color: #F00; font-weight: bold;">办公、文教、乐器</a><span>(50)</span>
+                                                </li><li><a href="/dede/templets/xkshop/a/meichengmoban/yundong_huwai_chon/"
+                                                        style="color: #F00; font-weight: bold;">运动、户外、宠物用品</a><span>(50)</span>
+                                                </li><li><a href="/dede/templets/xkshop/a/meichengmoban/shipin_yinliao_cha/"
+                                                        style="color: #F00; font-weight: bold;">食品、饮料、茶叶、酒类</a><span>(50)</span>
+                                                </li><li><a href="/dede/templets/xkshop/a/meichengmoban/zhongbiao_yanjing/"
+                                                        style="color: #F00; font-weight: bold;">钟表、眼镜</a><span>(50)</span>
+                                                </li>
+
+                                        </ul>
+				</div>
+
+			</div>
+
+
+			<div class="right">
+				<!--tem_r_title-->
+				<div id="tem_r_title">
+					<div id="tem_r_title_f_03" class="tem_r_t_bg">模板展示</div>
+				</div>
+				<!--tem_r_title end-->
+				<div id="tem_list">
+		<div class="tem_list_e">
+						<!--tem_list_e_pic-->
+						<div class="tem_list_e_pic">
+							<a href="http://wanju11a48.site3.idccenter.net/?key=agent"
+								target="_blank"><img
+								src="http://screenshots.idccenter.net/screenshots/wanju11a48.jpg"
+								alt=" 玩具A48" width="170" height="170">
+							</a>
+						</div>
+						<!--tem_list_e_pic end-->
+						<!--tem_list_e_name-->
+						<div class="tem_list_e_name">模板编号:2300</div>
+						<!--tem_list_e_name-->
+					</div><div class="tem_list_e">
+						<!--tem_list_e_pic-->
+						<div class="tem_list_e_pic">
+							<a href="http://wanju11a47.site3.idccenter.net/?key=agent"
+								target="_blank"><img
+								src="http://screenshots.idccenter.net/screenshots/wanju11a47.jpg"
+								alt=" 玩具A47" width="170" height="170">
+							</a>
+						</div>
+						<!--tem_list_e_pic end-->
+						<!--tem_list_e_name-->
+						<div class="tem_list_e_name">模板编号:2299</div>
+						<!--tem_list_e_name-->
+					</div><div class="tem_list_e">
+						<!--tem_list_e_pic-->
+						<div class="tem_list_e_pic">
+							<a href="http://wanju11a45.site3.idccenter.net/?key=agent"
+								target="_blank"><img
+								src="http://screenshots.idccenter.net/screenshots/wanju11a45.jpg"
+								alt=" 玩具A45" width="170" height="170">
+							</a>
+						</div>
+						<!--tem_list_e_pic end-->
+						<!--tem_list_e_name-->
+						<div class="tem_list_e_name">模板编号:2298</div>
+						<!--tem_list_e_name-->
+					</div><div class="tem_list_e">
+						<!--tem_list_e_pic-->
+						<div class="tem_list_e_pic">
+							<a href="http://wanju11a44.site3.idccenter.net/?key=agent"
+								target="_blank"><img
+								src="http://screenshots.idccenter.net/screenshots/wanju11a44.jpg"
+								alt=" 玩具A44" width="170" height="170">
+							</a>
+						</div>
+						<!--tem_list_e_pic end-->
+						<!--tem_list_e_name-->
+						<div class="tem_list_e_name">模板编号:2297</div>
+						<!--tem_list_e_name-->
+					</div><div class="tem_list_e">
+						<!--tem_list_e_pic-->
+						<div class="tem_list_e_pic">
+							<a href="http://wanju11a43.site3.idccenter.net/?key=agent"
+								target="_blank"><img
+								src="http://screenshots.idccenter.net/screenshots/wanju11a43.jpg"
+								alt=" 玩具A43" width="170" height="170">
+							</a>
+						</div>
+						<!--tem_list_e_pic end-->
+						<!--tem_list_e_name-->
+						<div class="tem_list_e_name">模板编号:2296</div>
+						<!--tem_list_e_name-->
+					</div><div class="tem_list_e">
+						<!--tem_list_e_pic-->
+						<div class="tem_list_e_pic">
+							<a href="http://wanju11a42.site3.idccenter.net/?key=agent"
+								target="_blank"><img
+								src="http://screenshots.idccenter.net/screenshots/wanju11a42.jpg"
+								alt=" 玩具A42" width="170" height="170">
+							</a>
+						</div>
+						<!--tem_list_e_pic end-->
+						<!--tem_list_e_name-->
+						<div class="tem_list_e_name">模板编号:2295</div>
+						<!--tem_list_e_name-->
+					</div><div class="tem_list_e">
+						<!--tem_list_e_pic-->
+						<div class="tem_list_e_pic">
+							<a href="http://wanju11a41.site3.idccenter.net/?key=agent"
+								target="_blank"><img
+								src="http://screenshots.idccenter.net/screenshots/wanju11a41.jpg"
+								alt=" 玩具A41" width="170" height="170">
+							</a>
+						</div>
+						<!--tem_list_e_pic end-->
+						<!--tem_list_e_name-->
+						<div class="tem_list_e_name">模板编号:2294</div>
+						<!--tem_list_e_name-->
+					</div><div class="tem_list_e">
+						<!--tem_list_e_pic-->
+						<div class="tem_list_e_pic">
+							<a href=" http://wanju11a38.site3.idccenter.net/?key=agent"
+								target="_blank"><img
+								src=" http://screenshots.idccenter.net/screenshots/wanju11a38.jpg"
+								alt="  玩具A38" width="170" height="170">
+							</a>
+						</div>
+						<!--tem_list_e_pic end-->
+						<!--tem_list_e_name-->
+						<div class="tem_list_e_name">模板编号: 2293</div>
+						<!--tem_list_e_name-->
+					</div><div class="tem_list_e">
+						<!--tem_list_e_pic-->
+						<div class="tem_list_e_pic">
+							<a href="http://wanju11a37.site3.idccenter.net/?key=agent"
+								target="_blank"><img
+								src="http://screenshots.idccenter.net/screenshots/wanju11a37.jpg"
+								alt=" 玩具A37" width="170" height="170">
+							</a>
+						</div>
+						<!--tem_list_e_pic end-->
+						<!--tem_list_e_name-->
+						<div class="tem_list_e_name">模板编号:2292</div>
+						<!--tem_list_e_name-->
+					</div><div class="tem_list_e">
+						<!--tem_list_e_pic-->
+						<div class="tem_list_e_pic">
+							<a href="http://wanju11a34.site3.idccenter.net/?key=agent"
+								target="_blank"><img
+								src="http://screenshots.idccenter.net/screenshots/wanju11a34.jpg"
+								alt=" 玩具A34" width="170" height="170">
+							</a>
+						</div>
+						<!--tem_list_e_pic end-->
+						<!--tem_list_e_name-->
+						<div class="tem_list_e_name">模板编号:2291</div>
+						<!--tem_list_e_name-->
+					</div><div class="tem_list_e">
+						<!--tem_list_e_pic-->
+						<div class="tem_list_e_pic">
+							<a href="http://wanju11a30.site3.idccenter.net/?key=agent"
+								target="_blank"><img
+								src="http://screenshots.idccenter.net/screenshots/wanju11a30.jpg"
+								alt=" 玩具A30" width="170" height="170">
+							</a>
+						</div>
+						<!--tem_list_e_pic end-->
+						<!--tem_list_e_name-->
+						<div class="tem_list_e_name">模板编号:2290</div>
+						<!--tem_list_e_name-->
+					</div><div class="tem_list_e">
+						<!--tem_list_e_pic-->
+						<div class="tem_list_e_pic">
+							<a href="http://wanju11a29.site3.idccenter.net/?key=agent"
+								target="_blank"><img
+								src="http://screenshots.idccenter.net/screenshots/wanju11a29.jpg"
+								alt=" 玩具A29" width="170" height="170">
+							</a>
+						</div>
+						<!--tem_list_e_pic end-->
+						<!--tem_list_e_name-->
+						<div class="tem_list_e_name">模板编号:2289</div>
+						<!--tem_list_e_name-->
+					</div><div class="tem_list_e">
+						<!--tem_list_e_pic-->
+						<div class="tem_list_e_pic">
+							<a href="http://wanju11a28.site3.idccenter.net/?key=agent"
+								target="_blank"><img
+								src="http://screenshots.idccenter.net/screenshots/wanju11a28.jpg"
+								alt=" 玩具A28" width="170" height="170">
+							</a>
+						</div>
+						<!--tem_list_e_pic end-->
+						<!--tem_list_e_name-->
+						<div class="tem_list_e_name">模板编号:2288</div>
+						<!--tem_list_e_name-->
+					</div><div class="tem_list_e">
+						<!--tem_list_e_pic-->
+						<div class="tem_list_e_pic">
+							<a href="http://wanju11a27.site3.idccenter.net/?key=agent"
+								target="_blank"><img
+								src="http://screenshots.idccenter.net/screenshots/wanju11a27.jpg"
+								alt=" 玩具A27" width="170" height="170">
+							</a>
+						</div>
+						<!--tem_list_e_pic end-->
+						<!--tem_list_e_name-->
+						<div class="tem_list_e_name">模板编号:2287</div>
+						<!--tem_list_e_name-->
+					</div><div class="tem_list_e">
+						<!--tem_list_e_pic-->
+						<div class="tem_list_e_pic">
+							<a href="http://wanju10a26.site3.idccenter.net/?key=agent"
+								target="_blank"><img
+								src="http://screenshots.idccenter.net/screenshots/wanju10a26.jpg"
+								alt=" 玩具A26" width="170" height="170">
+							</a>
+						</div>
+						<!--tem_list_e_pic end-->
+						<!--tem_list_e_name-->
+						<div class="tem_list_e_name">模板编号:1739</div>
+						<!--tem_list_e_name-->
+					</div><div class="tem_list_e">
+						<!--tem_list_e_pic-->
+						<div class="tem_list_e_pic">
+							<a href="http://wanju10a24.site3.idccenter.net/?key=agent"
+								target="_blank"><img
+								src="http://screenshots.idccenter.net/screenshots/wanju10a24.jpg"
+								alt=" 玩具A24" width="170" height="170">
+							</a>
+						</div>
+						<!--tem_list_e_pic end-->
+						<!--tem_list_e_name-->
+						<div class="tem_list_e_name">模板编号:1735</div>
+						<!--tem_list_e_name-->
+					</div><div class="tem_list_e">
+						<!--tem_list_e_pic-->
+						<div class="tem_list_e_pic">
+							<a href="http://wanju10a25.site3.idccenter.net/?key=agent"
+								target="_blank"><img
+								src="http://screenshots.idccenter.net/screenshots/wanju10a25.jpg"
+								alt=" 玩具A25" width="170" height="170">
+							</a>
+						</div>
+						<!--tem_list_e_pic end-->
+						<!--tem_list_e_name-->
+						<div class="tem_list_e_name">模板编号:1734</div>
+						<!--tem_list_e_name-->
+					</div><div class="tem_list_e">
+						<!--tem_list_e_pic-->
+						<div class="tem_list_e_pic">
+							<a href="http://wanju10a23.site3.idccenter.net/?key=agent"
+								target="_blank"><img
+								src="http://screenshots.idccenter.net/screenshots/wanju10a23.jpg"
+								alt=" 玩具A23" width="170" height="170">
+							</a>
+						</div>
+						<!--tem_list_e_pic end-->
+						<!--tem_list_e_name-->
+						<div class="tem_list_e_name">模板编号:1727</div>
+						<!--tem_list_e_name-->
+					</div><div class="tem_list_e">
+						<!--tem_list_e_pic-->
+						<div class="tem_list_e_pic">
+							<a href="http://wanju10a22.site3.idccenter.net/?key=agent"
+								target="_blank"><img
+								src="http://screenshots.idccenter.net/screenshots/wanju10a22.jpg"
+								alt=" 玩具A22" width="170" height="170">
+							</a>
+						</div>
+						<!--tem_list_e_pic end-->
+						<!--tem_list_e_name-->
+						<div class="tem_list_e_name">模板编号:1722</div>
+						<!--tem_list_e_name-->
+					</div><div class="tem_list_e">
+						<!--tem_list_e_pic-->
+						<div class="tem_list_e_pic">
+							<a href="http://wanju10a21.site3.idccenter.net/?key=agent"
+								target="_blank"><img
+								src="http://screenshots.idccenter.net/screenshots/wanju10a21.jpg"
+								alt=" 玩具A21" width="170" height="170">
+							</a>
+						</div>
+						<!--tem_list_e_pic end-->
+						<!--tem_list_e_name-->
+						<div class="tem_list_e_name">模板编号:1721</div>
+						<!--tem_list_e_name-->
+					</div><div class="tem_list_e">
+						<!--tem_list_e_pic-->
+						<div class="tem_list_e_pic">
+							<a href="http://wanju10a20.site3.idccenter.net/?key=agent"
+								target="_blank"><img
+								src="http://screenshots.idccenter.net/screenshots/wanju10a20.jpg"
+								alt=" 玩具A20" width="170" height="170">
+							</a>
+						</div>
+						<!--tem_list_e_pic end-->
+						<!--tem_list_e_name-->
+						<div class="tem_list_e_name">模板编号:1712</div>
+						<!--tem_list_e_name-->
+					</div><div class="tem_list_e">
+						<!--tem_list_e_pic-->
+						<div class="tem_list_e_pic">
+							<a href="http://wanju10a19.site3.idccenter.net/?key=agent"
+								target="_blank"><img
+								src="http://screenshots.idccenter.net/screenshots/wanju10a19.jpg"
+								alt=" 玩具A19" width="170" height="170">
+							</a>
+						</div>
+						<!--tem_list_e_pic end-->
+						<!--tem_list_e_name-->
+						<div class="tem_list_e_name">模板编号:1705</div>
+						<!--tem_list_e_name-->
+					</div><div class="tem_list_e">
+						<!--tem_list_e_pic-->
+						<div class="tem_list_e_pic">
+							<a href="http://wanju10a18.site3.idccenter.net/?key=agent"
+								target="_blank"><img
+								src="http://screenshots.idccenter.net/screenshots/wanju10a18.jpg"
+								alt=" 玩具A18" width="170" height="170">
+							</a>
+						</div>
+						<!--tem_list_e_pic end-->
+						<!--tem_list_e_name-->
+						<div class="tem_list_e_name">模板编号:1704</div>
+						<!--tem_list_e_name-->
+					</div><div class="tem_list_e">
+						<!--tem_list_e_pic-->
+						<div class="tem_list_e_pic">
+							<a href="http://wanju10a17.site3.idccenter.net/?key=agent"
+								target="_blank"><img
+								src="http://screenshots.idccenter.net/screenshots/wanju10a17.jpg"
+								alt=" 玩具A17" width="170" height="170">
+							</a>
+						</div>
+						<!--tem_list_e_pic end-->
+						<!--tem_list_e_name-->
+						<div class="tem_list_e_name">模板编号:1698</div>
+						<!--tem_list_e_name-->
+					</div>
+				</div>
+				<div class="air"></div>
+				<script type="text/javascript">
+				function directPage(val,TotalPage,subPageNum){
+					if (!/\d+/.test(val))
+					{
+						alert("请输入数字！")
+						return false;
+					}
+					if (Number(val) > Number(TotalPage) || Number(val) < 1)
+					{
+						alert("您输入的数值不在范围内，请重新输入!")
+						return false;
+					}
+					location.href="template_show.asp?ewebtplcate=" + 0 + "&tp=" + val +"&suppertplcate="+subPageNum;
+				}
+				</script>
+				<div class="digg">
+
+								<ul>
+									<li><a href='list_28_1.html'>首页</a></li>
+<li><a href='list_28_43.html'>上一页</a></li>
+<li><a href='list_28_39.html'>39</a></li>
+<li><a href='list_28_40.html'>40</a></li>
+<li><a href='list_28_41.html'>41</a></li>
+<li><a href='list_28_42.html'>42</a></li>
+<li><a href='list_28_43.html'>43</a></li>
+<li class="thisclass">44</li>
+<li><a href='list_28_45.html'>45</a></li>
+<li><a href='list_28_46.html'>46</a></li>
+<li><a href='list_28_47.html'>47</a></li>
+<li><a href='list_28_48.html'>48</a></li>
+<li><a href='list_28_49.html'>49</a></li>
+<li><a href='list_28_45.html'>下一页</a></li>
+<li><a href='list_28_83.html'>末页</a></li>
+<li><span class="pageinfo">共 <strong>83</strong>页<strong>1977</strong>条</span></li>
+
+								</ul>
+
+				</div>
+				<div align="center">
+					<table>
+						<tbody>
+							<tr>
+								<td align="center">
+									<form name="form1" style="width: 300px; float: none;"
+										method="post" action="template_show.asp">
+										请输入模板编号: <input type="text" value="" id="findValue1"
+											style="width: 100px;" name="findValue"> <a href="#"
+											onclick="javascript:form1.submit();">搜索</a> <input
+											type="hidden" value="-100" name="pageTag">
+									</form></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div id="web_right"></div>
+	</div>
+
+	<!--footer-->
+<div id="footer">
+	<!--flink-->
+	<div class="flink">
+		<div class="flink_t"></div>
+		<div class="flink_c">
+			<ul>
+				<li><strong>友情链接：</strong>
+				</li>
+				<a target="_blank" href="http://www.google.com/">Google</a> &nbsp;
+				<a target="_blank" href="http://www.baidu.com/">百度</a> &nbsp;
+			</ul>
+		</div>
+		<div class="flink_b"></div>
+	</div>
+	<!--flink end-->
+	<!--b_link-->
+	<div class="b_link">
+		<a href="http://www.flxkdns.com/help/pay.asp">付款方式</a> | <a
+			href="http://www.flxkdns.com/help/price.asp">价格总览</a> | <a
+			href="http://www.flxkdns.com/help/job.asp">诚聘英才</a> | <a
+			href="http://www.flxkdns.com/help/aboutus.asp">关于我们</a> | <a
+			href="http://www.flxkdns.com/help/contact.asp">联系我们</a> | <a
+			href="http://www.flxkdns.com/help/postQues.asp">咨询反馈</a>
+	</div>
+	<!--b_link end-->
+	<!--copyright-->
+	<div id="copyright">
+		<table width="930" border="0" align="center" cellpadding="0"
+			cellspacing="0" style="margin: 0 auto">
+			<tbody>
+				<tr>
+					<td><table border="0" cellspacing="0" cellpadding="0">
+							<tbody>
+								<tr>
+									<td><img
+										src="/dede/templets/xkshop/images/logof.gif"
+										width="150" height="67">
+									</td>
+									<td>&nbsp;</td>
+									<td>Copyright &#169; 2006-2011 http://www.flxkdns.com<br>
+										All Rights Reserved. <br> 版权所有：星空软件工作室</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+					<td>&nbsp;</td>
+					<td><table border="0" align="right" cellpadding="0"
+							cellspacing="0">
+							<tbody>
+								<tr>
+									<td>7 × 24小时服务热线：<strong class="or_font font_14">18701132241</strong>
+										传真：<br> 咨询信箱：<a href="mailto:changdejie2007@126.com">changdejie2007@126.com</a>
+										咨询QQ：736233152<br> <a href="http://www.miibeian.gov.cn/">京ICP备11030135号</a>
+
+
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+	</div>
+	<!--copyright end-->
+</div>
+<!--footer-->
+	<!--main end-->
+</body>
+</html>
