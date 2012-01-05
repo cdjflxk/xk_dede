@@ -110,12 +110,11 @@ ol,ul,li{list-style-type:none;}
 .tem_feature dl.tem_f_03 dt{ padding-top:6px;}
 
 /*--- news_list ---*/
-.news_list{ background:#f2f2f2; padding:8px; overflow:auto; zoom:1; overflow-x:hidden; overflow-y:hidden; margin-bottom:10px; clear:both;}
+.news_list{ background:#f2f2f2; padding:4px; overflow:auto; zoom:1; overflow-x:hidden; overflow-y:hidden; margin-bottom:10px; clear:both;}
 .news_block{background:#FFF; border:2px solid #e7e7e7; border-left:none; border-top:none; float:left; _display:inline; width:314px;}
 .n_title{float:left;}
 .n_more{float:right; font-weight:normal; margin-right:30px;}
-.news_list_01{margin-right:8px;}
-.news_list_02{margin-right:8px;}
+.news_list_03{margin-left:8px;}
 .news_block h2{ font-size:13px;  font-weight:bold; height:31px; line-height:31px; padding-left:45px;}
 .news_block ul{ padding:10px 0 10px 16px;}
 .news_block ul li{ line-height:26px; height:26px; background:url(../images/arrow_02.gif) no-repeat left; padding-left:21px; width:260px; overflow:hidden;}

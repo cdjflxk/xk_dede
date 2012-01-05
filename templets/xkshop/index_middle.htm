@@ -110,59 +110,23 @@ upload/flash/focus.swf 这是当前特效调用的flash, 请不要改动否则�
 <!--tem_feature end-->
 <!--news_list-->
 <div class="news_list">
-	<!--news_list_01-->
-	<div class="news_list_01 news_block">
-		<h2>
-			<span class="n_title"><a href="http://www.flxkdns.com/news/">网站公告</a>
-			</span><span class="n_more"><a href="http://www.flxkdns.com/news/">更多</a>
-			</span>
-		</h2>
-		<ul> 
-		</ul>
-	</div>
-	<!--news_list_01 end-->
-	<!--news_list_02-->
-	<div class="news_list_02 news_block">
-		<h2>
-			<span class="n_title"><a
-				href="http://www.flxkdns.com/article/">建站新闻</a>
-                            {dede:mynews row='1' titlelen='20'}[field:title /]{/dede:mynews}
-			</span><span class="n_more"><a href="http://www.flxkdns.com/article/">更多</a>
-			</span>
-		</h2>
-		<ul> 
-		</ul>
-	</div>
-	<!--news_list_02 end-->
-	<!--news_list_03-->
+{dede:channelartlist typeid='70' }
+	<!--news_list-->
 	<div class="news_list_03 news_block">
 		<h2>
-			<span class="n_title"><a href="http://www.flxkdns.com/help/">建站帮助</a>
-			</span><span class="n_more"><a href="http://www.flxkdns.com/help/">更多</a>
+			<span class="n_title"><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a>
+			</span><span class="n_more"><a href="{dede:field name='typeurl'/}">更多</a>
 			</span>
 		</h2>
 		<ul>
-			<li><a title="新手入门"
-				href="http://www.flxkdns.com/ucenter/sshelp/help.asp"
-				class="a_helptopiclist">新手入门</a>
-			</li>
-			<li><a title="网站使用"
-				href="http://www.flxkdns.com/ucenter/sshelp/help_site.asp"
-				class="a_helptopiclist">网站使用</a>
-			</li>
-			<li><a title="模板制作与使用"
-				href="http://www.flxkdns.com/ucenter/sshelp/help_tem.asp"
-				class="a_helptopiclist">模板制作与使用</a>
-			</li>
-			<li><a title="如何解析域名到我的主机？"
-				href="http://www.flxkdns.com/ucenter/sshelp/help_show_be01.asp"
-				target="_self">智能建站系统环境要求和安装方法？</a>
-			</li>
-			<li><a title="如何解析域名到我的主机？"
-				href="http://www.flxkdns.com/help/dme_g.asp#2" target="_self">如何解析域名到我的主机？</a>
-			</li>
+			{dede:arclist  row='4'}
+	
+					<li><a title="[field:title/]" href="[field:arcurl/]">[field:title/]</a>
+					</li>
+			{/dede:arclist}
 		</ul>
 	</div>
-	<!--news_list_03 end-->
+	<!--news_list-->
+{/dede:channelartlist}
 </div>
 <!--news_list end-->

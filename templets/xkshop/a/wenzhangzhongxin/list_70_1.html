@@ -1,0 +1,458 @@
+<!-- saved from url=(0023)http://www.flxkdns.com/ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<!--js-->
+<script language="JavaScript"
+	src="/dede/templets/xkshop/js/png.js"></script>
+<script language="JavaScript"
+	src="/dede/templets/xkshop/js/jquery-min.js"></scrjs/swfobject.js"></script>
+<script type="text/javascript"
+	src="/dede/templets/xkshop/js/dme_input.js"></script>
+<script language="javascript" type="text/javascript"
+	src="/dede/include/dedeajax2.js"></script>
+	
+<script>
+function multi(pagenum,tagid)
+{
+	var taget_obj = document.getElementById(tagid);
+	var taget_obj_page = document.getElementById("page_"+tagid);
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/arcmulti.php?mtype=0&pnum="+pagenum+'&tagid='+tagid);
+	myajax = new DedeAjax(taget_obj_page,false,false,'','','');
+	myajax.SendGet2("/plus/arcmulti.php?mtype=1&pnum="+pagenum+'&tagid='+tagid);
+	DedeXHTTP = null;
+	alert("ok");
+}
+</script>	
+	
+<!--css-->
+<link type="text/css" rel="stylesheet"
+	href="/dede/templets/xkshop/css/skin.css">
+	
+<link href="/dede/templets/xkshop/css/webstyle.css"
+rel="stylesheet" type="text/css">
+
+<link href="/dede/templets/xkshop/css/style(1).css"
+	rel="stylesheet" type="text/css">
+	
+<link href="/dede/templets/xkshop/css/style.css"
+	rel="stylesheet" type="text/css">
+
+<style type="text/css" media="screen">
+#swfContent {
+	visibility: hidden
+}
+</style>
+
+</head>
+
+<body>
+	
+<div style="clear: both;"></div>
+
+<title>月夜星空软件工作室</title>
+<meta name="keywords"
+	content="域名注册|网络实名|主机租赁|企业邮局|网站策划|企业邮局|主机托管|主机租用|服务器租用">
+<meta name="description"
+	content="虚拟主机服务商，提供南北互通的双线单IP虚拟主机、域名注册服务、企业邮局、CDN网页加速等服务">
+
+ <!--header-->
+<div id="header">
+	<!--top-->
+	<div class="top">
+		<!--logo-->
+		<div id="logo">
+			<img src="/dede/templets/xkshop/images/logo.gif"
+				width="224" height="66">
+		</div>
+		<!--logo end-->
+		<!--link_nav-->
+		<div class="link_nav">
+			<!--link-->
+			<div class="link">
+				<span class="l_hotlink">7 × 24小时服务热线：18701132241</span> <span
+					class="l_m_link"> <a
+					href="/dede/plus/list.php?tid=11">帮助中心</a>  |  
+					<a href="/dede/plus/list.php?tid=27">价格总览</a>  |  <a
+					href="/dede/plus/list.php?tid=26">付款方式</a>   </span>
+			</div>
+			<!--link end-->
+			<script type="text/javascript">
+			<!--//--><![CDATA[//><!--
+				function CheckLogin() {
+					var taget_obj = document.getElementById('_userlogin');
+					myajax = new DedeAjax(taget_obj, false, false, '', '', '');
+					myajax
+							.SendGet2("/dede/member/ajax_loginsta.php");
+					DedeXHTTP = null;
+				}
+
+				function menuFix() {
+					var sfEls = document.getElementById("nav")
+							.getElementsByTagName("li");
+					for ( var i = 0; i < sfEls.length; i++) {
+						sfEls[i].onmouseover = function() {
+							this.className += (this.className.length > 0 ? " "
+									: "")
+									+ "sfhover";
+						}
+						sfEls[i].onMouseDown = function() {
+							this.className += (this.className.length > 0 ? " "
+									: "")
+									+ "sfhover";
+						}
+						sfEls[i].onMouseUp = function() {
+							this.className += (this.className.length > 0 ? " "
+									: "")
+									+ "sfhover";
+						}
+						sfEls[i].onmouseout = function() {
+							this.className = this.className.replace(new RegExp(
+									"( ?|^)sfhover\\b"),
+
+							"");
+						}
+					}
+				}
+				window.onload = menuFix;
+
+				//--><!
+			</script>
+			<!--nav-->
+			<div id="nav">
+				<ul>
+					<li class="nav_local"><a href="/dede/">首页</a>
+					</li> 
+					<li class=""><a href="/dede/plus/list.php?tid=15">产品介绍</a>
+					</li> 
+					<li class=""><a href="/dede/plus/list.php?tid=16">建站套餐</a>
+					</li> <li class='hover'><a href='/dede/templets/xkshop/a/wenzhangzhongxin/' rel='dropmenu70'><span>文章中心</span> </a></li>
+					<li class=""><a href="/dede/plus/list.php?tid=14">模版展示</a>
+					</li> 
+					<li class=""><a href="/dede/plus/list.php?tid=17">网店建设</a>
+					</li> 
+					<li class=""><a href="/dede/plus/list.php?tid=12">虚拟主机</a>
+					</li> 
+					<li class=""><a href="/dede/plus/list.php?tid=18">vps</a>
+					</li> 
+					<li class=""><a href="/dede/plus/list.php?tid=19">企业推广</a>
+					</li> 
+					<li class=""><a href="/dede/plus/list.php?tid=20">域名注册</a>
+					</li> 
+				</ul>
+			</div>
+			<!--nav end-->
+		</div>
+		<!--link_nav end-->
+	</div>
+	<!--top end-->
+	<!--login_r_link-->
+	<div class="login_r_link" id="_userlogin">
+		<div class="login_r_link_t">
+			<h2>用户登录</h2>
+		</div>
+		<div class="login_r_link_c">
+
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tbody>
+					<tr>
+						<td height="33"><form name="userlogin"
+								action="/dede/member/index_do.php" method="post">
+								账户 <label for="username"></label> <input name="userid"
+									type="text" id="usrname" class="username" size="15"
+									maxlength="20"> 密码 <label for="password"></label> <input
+									name="pwd" type="password" id="usrpass" class="password"
+									size="15" maxlength="20">
+
+								<!-- 登录的隐藏字段 -->
+								<input type="hidden" name="fmdo" value="login" /> <input
+									type="hidden" name="dopost" value="login" /> <input
+									type="hidden" name="keeptime" value="604800" /> <input
+									type="submit" name="button" id="submit" class="submit"
+									value="登录">
+							</form></td>
+						<td height="33"><a
+							href="/dede/member/index_do.php?fmdo=user&dopost=regnew">注册用户</a>&nbsp;&nbsp;&nbsp;<font
+							class="gray_font">|</font>&nbsp;&nbsp;&nbsp;<a
+							href="/dede/member/resetpassword.php">取回密码</a>&nbsp;&nbsp;&nbsp;<font
+							class="gray_font">|</font>&nbsp;&nbsp;&nbsp; <a href="/dede/plus/list.php?tid=11">帮助中心</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="login_r_link_r"></div>
+	</div>
+	<!--login_r_link end-->
+
+	<script language="javascript" type="text/javascript">
+		CheckLogin();
+	</script>
+</div>
+	<!--header end-->
+	<div id="main">
+		<!--tem_show-->
+		<div class="tem_show">
+
+			<!--//-------------------------------内容 -------------------------------//-->
+
+			<!--20110414 zpf-->
+			<link href="/ucenter/skins/common/style/webstyle.css"
+				rel="stylesheet" type="text/css">
+
+			<!--20110414 zpf-->
+			<!--content start-->
+
+			<div id="main">
+				<!--tem_show-->
+				<div class="tem_show">
+
+					<!--left-->
+
+
+
+
+					<div class="left">
+
+						<!--  自定义帮助  -->
+						<div id="categories">
+							<h2>其他帮助</h2>
+							<ul>
+
+
+							</ul>
+						</div>
+
+						<!--  自定义帮助  -->
+
+
+						<div id="categories">
+							<h2>建站帮助</h2>
+							<ul>
+								<li><a title="新手入门" href="/ucenter/sshelp/help.asp"
+									class="a_helptopiclist">新手入门</a>
+								</li>
+								<li><a title="网站使用" href="/ucenter/sshelp/help_site.asp"
+									class="a_helptopiclist">网站使用</a>
+								</li>
+								<li><a title="模板制作与使用" href="/ucenter/sshelp/help_tem.asp"
+									class="a_helptopiclist">模板制作与使用</a>
+								</li>
+							</ul>
+						</div>
+
+						<!--help_list-->
+						<div class="left_list">
+							<h2>VPS帮助</h2>
+							<ul>
+								<li><a href="/ucenter/sshelp/vps_help_01.asp">VPS购买流程示意图</a>
+								</li>
+								<li><a href="/ucenter/sshelp/vps_help_02.asp">远程登录</a>
+								</li>
+								<li><a href="/ucenter/sshelp/vps_help_03.asp">FTP服务的管理与使用</a>
+								</li>
+								<li><a href="/ucenter/sshelp/vps_help_04.asp">IIS站点的管理与使用</a>
+								</li>
+								<li><a href="/ucenter/sshelp/vps_help_05.asp">如何安装Sql
+										server 2005</a>
+								</li>
+								<li><a href="/ucenter/sshelp/vps_help_06.asp">如何使用已经安装的MYSQL数据库</a>
+								</li>
+								<li><a href="/ucenter/sshelp/vps_help_07.asp">如何使用方瑞快备备份文件</a>
+								</li>
+								<li><a href="/ucenter/sshelp/vps_help_08.asp">vps使用注意事项</a>
+								</li>
+								<li><a href="/ucenter/sshelp/vps_help_09.asp">VPS系统环境</a>
+								</li>
+							</ul>
+						</div>
+						<!--help_list end-->
+
+
+						<!--categories-->
+						<div id="categories">
+							<h2>帮助中心</h2>
+							<ul>
+								<li><a title="联系我们" href="/help/contact.asp"
+									class="a_helptopiclist">联系我们</a>
+								</li>
+								<li><a title="站内公告" href="/news/" class="a_helptopiclist">站内公告</a>
+								</li>
+								<li><a title="行业新闻" href="/article/"
+									class="a_helptopiclist">行业新闻</a>
+								</li>
+								<li><a title="价格总览" href="/help/price.asp"
+									class="a_helptopiclist">价格总览</a>
+								</li>
+								<li><a title="付款方式" href="/help/pay.asp"
+									class="a_helptopiclist">付款方式</a>
+								</li>
+								<li><a title="财务相关问题" href="/help/fnc_a.asp"
+									class="a_helptopiclist">财务相关问题</a>
+								</li>
+								<li><a title="域名相关问题" href="/help/dme_a.asp"
+									class="a_helptopiclist">域名相关问题</a>
+								</li>
+								<li><a title="主机相关问题" href="/help/hst_b.asp"
+									class="a_helptopiclist">主机相关问题</a>
+								</li>
+								<li><a title="邮局相关问题" href="/help/eml_b.asp"
+									class="a_helptopiclist">邮局相关问题</a>
+								</li>
+								<li><a title="咨询反馈提交" href="/help/postQues.asp"
+									class="a_helptopiclist">咨询反馈提交</a>
+								</li>
+							</ul>
+						</div>
+						<!--categories end-->
+
+
+					</div>
+
+
+
+					<!--left end-->
+
+
+					<!--right-->
+					<div class="right">
+						<!--tem_r_title-->
+						<div id="tem_r_title">
+							<div id="tem_r_title_f_03" class="tem_r_t_bg">帮助中心</div>
+						</div>
+						<!--tem_r_title end-->
+						<!--//-------------------------------内容 -------------------------------//-->
+						<div id="web_content">
+							<div class="local">
+								<strong>当前位置：</strong>帮助中心 &gt; 新手入门
+							</div>
+							<table cellspacing="0" cellpadding="0" width="750" border="0">
+								<tbody>
+									<tr>
+										<td align="left">
+											<!-- @content body -->
+											<table cellspacing="1" cellpadding="0" width="100%"
+												align="center" border="0">
+												<tbody>
+													<tr bgcolor="#fcfcfc">
+														<td align="middle" width="8%" height="26">序号</td>
+														<td align="middle" height="26">标题</td>
+													</tr>
+													<tr bgcolor="#eef7fd">
+															<td align="middle" bgcolor="#fefefe" height="24">1</td>
+															<td bgcolor="#fefefe" height="24"><a
+																href="/dede/templets/xkshop/a/wenzhangzhongxin/bangzhuzhongxin/2012/0105/2019.html">企业建站系统环境要求和</a>
+															</td>
+														</tr>
+<tr bgcolor="#eef7fd">
+															<td align="middle" bgcolor="#fefefe" height="24">1</td>
+															<td bgcolor="#fefefe" height="24"><a
+																href="/dede/templets/xkshop/a/wenzhangzhongxin/jianzhanxinwen/2012/0105/2018.html">工商局:网店实名未敲定</a>
+															</td>
+														</tr>
+<tr bgcolor="#eef7fd">
+															<td align="middle" bgcolor="#fefefe" height="24">1</td>
+															<td bgcolor="#fefefe" height="24"><a
+																href="/dede/templets/xkshop/a/wenzhangzhongxin/jianzhanxinwen/2012/0105/2017.html">CNNIC启动“2010可信网络普</a>
+															</td>
+														</tr>
+<tr bgcolor="#eef7fd">
+															<td align="middle" bgcolor="#fefefe" height="24">1</td>
+															<td bgcolor="#fefefe" height="24"><a
+																href="/dede/templets/xkshop/a/wenzhangzhongxin/wangzhangonggao/2012/0105/2016.html">CN域名、中文域名系统维护</a>
+															</td>
+														</tr>
+<tr bgcolor="#eef7fd">
+															<td align="middle" bgcolor="#fefefe" height="24">1</td>
+															<td bgcolor="#fefefe" height="24"><a
+																href="/dede/templets/xkshop/a/wenzhangzhongxin/wangzhangonggao/2012/0105/2015.html">优惠通知</a>
+															</td>
+														</tr>
+
+													
+												</tbody>
+											</table>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+					</div>
+					<!--right end-->
+				</div>
+				<!--tem_show end-->
+			</div>
+			<!--footer-->
+<div id="footer">
+	<!--flink-->
+	<div class="flink">
+		<div class="flink_t"></div>
+		<div class="flink_c">
+			<ul>
+				<li><strong>友情链接：</strong>
+				</li>
+				<a target="_blank" href="http://www.google.com/">Google</a> &nbsp;
+				<a target="_blank" href="http://www.baidu.com/">百度</a> &nbsp;
+			</ul>
+		</div>
+		<div class="flink_b"></div>
+	</div>
+	<!--flink end-->
+	<!--b_link-->
+	<div class="b_link">
+		<a href="http://www.flxkdns.com/help/pay.asp">付款方式</a> | <a
+			href="http://www.flxkdns.com/help/price.asp">价格总览</a> | <a
+			href="http://www.flxkdns.com/help/job.asp">诚聘英才</a> | <a
+			href="http://www.flxkdns.com/help/aboutus.asp">关于我们</a> | <a
+			href="http://www.flxkdns.com/help/contact.asp">联系我们</a> | <a
+			href="http://www.flxkdns.com/help/postQues.asp">咨询反馈</a>
+	</div>
+	<!--b_link end-->
+	<!--copyright-->
+	<div id="copyright">
+		<table width="930" border="0" align="center" cellpadding="0"
+			cellspacing="0" style="margin: 0 auto">
+			<tbody>
+				<tr>
+					<td><table border="0" cellspacing="0" cellpadding="0">
+							<tbody>
+								<tr>
+									<td><img
+										src="/dede/templets/xkshop/images/logof.gif"
+										width="150" height="67">
+									</td>
+									<td>&nbsp;</td>
+									<td>Copyright &#169; 2006-2011 http://www.flxkdns.com<br>
+										All Rights Reserved. <br> 版权所有：星空软件工作室</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+					<td>&nbsp;</td>
+					<td><table border="0" align="right" cellpadding="0"
+							cellspacing="0">
+							<tbody>
+								<tr>
+									<td>7 × 24小时服务热线：<strong class="or_font font_14">18701132241</strong>
+										传真：<br> 咨询信箱：<a href="mailto:changdejie2007@126.com">changdejie2007@126.com</a>
+										咨询QQ：736233152<br> <a href="http://www.miibeian.gov.cn/">京ICP备11030135号</a>
+
+
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+	</div>
+	<!--copyright end-->
+</div>
+<!--footer-->
+			<!--main end-->
+</body>
+</html>
