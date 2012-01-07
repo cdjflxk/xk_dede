@@ -110,8 +110,8 @@ ol,ul,li{list-style-type:none;}
 .tem_feature dl.tem_f_03 dt{ padding-top:6px;}
 
 /*--- news_list ---*/
-.news_list{ background:#f2f2f2; padding:4px; overflow:auto; zoom:1; overflow-x:hidden; overflow-y:hidden; margin-bottom:10px; clear:both;}
-.news_block{background:#FFF; border:2px solid #e7e7e7; border-left:none; border-top:none; float:left; _display:inline; width:314px;}
+.news_list{ background:#f2f2f2;  padding:8px ; padding-left: 0px; overflow:auto; zoom:1; overflow-x:hidden; overflow-y:hidden; margin-bottom:10px; clear:both;}
+.news_block{background:#FFF; border:2px solid #e7e7e7; border-left:none; border-top:none; float:left; _display:inline; width:310px;}
 .n_title{float:left;}
 .n_more{float:right; font-weight:normal; margin-right:30px;}
 .news_list_03{margin-left:8px;}
