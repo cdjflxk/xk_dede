@@ -1,9 +1,195 @@
 <!-- saved from url=(0023)http://www.flxkdns.com/ -->
 <html xmlns="http://www.w3.org/1999/xhtml">
-{dede:include filename="head_common.htm"/}
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<!--js-->
+<script language="JavaScript"
+	src="/dede/templets/xkshop/js/png.js"></script>
+<script language="JavaScript"
+	src="/dede/templets/xkshop/js/jquery-min.js"></scrjs/swfobject.js"></script>
+<script type="text/javascript"
+	src="/dede/templets/xkshop/js/dme_input.js"></script>
+<script language="javascript" type="text/javascript"
+	src="/dede/include/dedeajax2.js"></script>
+	
+<script>
+function multi(pagenum,tagid)
+{
+	var taget_obj = document.getElementById(tagid);
+	var taget_obj_page = document.getElementById("page_"+tagid);
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/arcmulti.php?mtype=0&pnum="+pagenum+'&tagid='+tagid);
+	myajax = new DedeAjax(taget_obj_page,false,false,'','','');
+	myajax.SendGet2("/plus/arcmulti.php?mtype=1&pnum="+pagenum+'&tagid='+tagid);
+	DedeXHTTP = null;
+	alert("ok");
+}
+</script>	
+	
+<!--css-->
+<link type="text/css" rel="stylesheet"
+	href="/dede/templets/xkshop/css/skin.css">
+	
+<link href="/dede/templets/xkshop/css/webstyle.css"
+rel="stylesheet" type="text/css">
+
+<link href="/dede/templets/xkshop/css/style(1).css"
+	rel="stylesheet" type="text/css">
+	
+<link href="/dede/templets/xkshop/css/style.css"
+	rel="stylesheet" type="text/css">
+
+<style type="text/css" media="screen">
+#swfContent {
+	visibility: hidden
+}
+</style>
+
+</head>
+
 <body>
-	{dede:include filename="head.htm"/} {dede:include
-	filename="index_toobar.htm"/}
+	
+<div style="clear: both;"></div>
+
+<title>月夜星空软件工作室</title>
+<meta name="keywords"
+	content="域名注册|网络实名|主机租赁|企业邮局|网站策划|企业邮局|主机托管|主机租用|服务器租用">
+<meta name="description"
+	content="虚拟主机服务商，提供南北互通的双线单IP虚拟主机、域名注册服务、企业邮局、CDN网页加速等服务">
+
+ <!--header-->
+<div id="header">
+	<!--top-->
+	<div class="top">
+		<!--logo-->
+		<div id="logo">
+			<img src="/dede/templets/xkshop/images/logo.gif"
+				width="224" height="66">
+		</div>
+		<!--logo end-->
+		<!--link_nav-->
+		<div class="link_nav">
+			<!--link-->
+			<div class="link">
+				<span class="l_hotlink">7 × 24小时服务热线：18701132241</span> <span
+					class="l_m_link"> <a
+					href="/dede/templets/xkshop/a/wenzhangzhongxin/bangzhuzhongxin/">帮助中心</a>  |  
+					<a href="">价格总览</a>  |  <a
+					href="/dede/templets/xkshop/a/fukuanfangshi/">付款方式</a>   </span>
+			</div>
+			<!--link end-->
+			<script type="text/javascript">
+			<!--//--><![CDATA[//><!--
+				function CheckLogin() {
+					var taget_obj = document.getElementById('_userlogin');
+					myajax = new DedeAjax(taget_obj, false, false, '', '', '');
+					myajax
+							.SendGet2("/dede/member/ajax_loginsta.php");
+					DedeXHTTP = null;
+				}
+
+				function menuFix() {
+					var sfEls = document.getElementById("nav")
+							.getElementsByTagName("li");
+					for ( var i = 0; i < sfEls.length; i++) {
+						sfEls[i].onmouseover = function() {
+							this.className += (this.className.length > 0 ? " "
+									: "")
+									+ "sfhover";
+						}
+						sfEls[i].onMouseDown = function() {
+							this.className += (this.className.length > 0 ? " "
+									: "")
+									+ "sfhover";
+						}
+						sfEls[i].onMouseUp = function() {
+							this.className += (this.className.length > 0 ? " "
+									: "")
+									+ "sfhover";
+						}
+						sfEls[i].onmouseout = function() {
+							this.className = this.className.replace(new RegExp(
+									"( ?|^)sfhover\\b"),
+
+							"");
+						}
+					}
+				}
+				window.onload = menuFix;
+
+				//--><!
+			</script>
+			<!--nav-->
+			<div id="nav">
+				<ul>
+					<li class="nav_local"><a href="/dede/">首页</a>
+					</li> <li class='hover'><a href='/dede/templets/xkshop/'><span>产品介绍</span> </a></li>
+					<li class=""><a href="/dede/templets/xkshop/">建站套餐</a>
+					</li> 
+					<li class=""><a href="/dede/templets/xkshop/">模版展示</a>
+					</li> 
+					<li class=""><a href="/dede/templets/xkshop/">网店建设</a>
+					</li> 
+					<li class=""><a href="/dede/templets/xkshop/">虚拟主机</a>
+					</li> 
+					<li class=""><a href="/dede/templets/xkshop/a/vps/">vps</a>
+					</li> 
+					<li class=""><a href="/dede/templets/xkshop/a/qiyetuiguang/">企业推广</a>
+					</li> 
+					<li class=""><a href="/dede/plus/list.php?tid=20">域名注册</a>
+					</li> 
+					<li class=""><a href="/dede/templets/xkshop/a/qiyeyouju/">企业邮局</a>
+					</li> 
+				</ul>
+			</div>
+			<!--nav end-->
+		</div>
+		<!--link_nav end-->
+	</div>
+	<!--top end-->
+	<!--login_r_link-->
+	<div class="login_r_link" id="_userlogin">
+		<div class="login_r_link_t">
+			<h2>用户登录</h2>
+		</div>
+		<div class="login_r_link_c">
+
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tbody>
+					<tr>
+						<td height="33"><form name="userlogin"
+								action="" method="post">
+								账户 <label for="username"></label> <input name="userid"
+									type="text" id="usrname" class="username" size="15"
+									maxlength="20"> 密码 <label for="password"></label> <input
+									name="pwd" type="password" id="usrpass" class="password"
+									size="15" maxlength="20">
+
+								<!-- 登录的隐藏字段 -->
+								<input type="hidden" name="fmdo" value="login" /> <input
+									type="hidden" name="dopost" value="login" /> <input
+									type="hidden" name="keeptime" value="604800" /> <input
+									type="submit" name="button" id="submit" class="submit"
+									value="登录">
+							</form></td>
+						<td height="33"><a
+							href="/dede/member/index_do.php?fmdo=user&dopost=regnew">注册用户</a>&nbsp;&nbsp;&nbsp;<font
+							class="gray_font">|</font>&nbsp;&nbsp;&nbsp;<a
+							href="/dede/member/resetpassword.php">取回密码</a>&nbsp;&nbsp;&nbsp;<font
+							class="gray_font">|</font>&nbsp;&nbsp;&nbsp; <a href="/dede/templets/xkshop/a/wenzhangzhongxin/bangzhuzhongxin/">帮助中心</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="login_r_link_r"></div>
+	</div>
+	<!--login_r_link end-->
+
+	<script language="javascript" type="text/javascript">
+		CheckLogin();
+	</script>
+</div>
 	<!--header end-->
 	<div id="main">
 		<!--tem_show-->
@@ -17,7 +203,7 @@
 						<!--module_info-->
 						<div class="module_info">
 							<div class="module_info_img">
-								<img src="{dede:global.cfg_templeturl /}/xkshop/images/001.png"
+								<img src="/dede/templets/xkshop/images/001.png"
 									width="48" height="48">
 							</div>
 							<div class="module_info_c">
@@ -29,7 +215,7 @@
 						<!--module_info-->
 						<div class="module_info">
 							<div class="module_info_img">
-								<img src="{dede:global.cfg_templeturl /}/xkshop/images/002.png"
+								<img src="/dede/templets/xkshop/images/002.png"
 									width="48" height="48">
 							</div>
 							<div class="module_info_c">
@@ -41,7 +227,7 @@
 						<!--module_info-->
 						<div class="module_info">
 							<div class="module_info_img">
-								<img src="{dede:global.cfg_templeturl /}/xkshop/images/003.png"
+								<img src="/dede/templets/xkshop/images/003.png"
 									width="48" height="48">
 							</div>
 							<div class="module_info_c">
@@ -53,7 +239,7 @@
 						<!--module_info-->
 						<div class="module_info">
 							<div class="module_info_img">
-								<img src="{dede:global.cfg_templeturl /}/xkshop/images/004.png"
+								<img src="/dede/templets/xkshop/images/004.png"
 									width="48" height="48">
 							</div>
 							<div class="module_info_c">
@@ -65,7 +251,7 @@
 						<!--module_info-->
 						<div class="module_info">
 							<div class="module_info_img">
-								<img src="{dede:global.cfg_templeturl /}/xkshop/images/005.png"
+								<img src="/dede/templets/xkshop/images/005.png"
 									width="48" height="48">
 							</div>
 							<div class="module_info_c">
@@ -77,7 +263,7 @@
 						<!--module_info-->
 						<div class="module_info">
 							<div class="module_info_img">
-								<img src="{dede:global.cfg_templeturl /}/xkshop/images/006.png"
+								<img src="/dede/templets/xkshop/images/006.png"
 									width="48" height="48">
 							</div>
 							<div class="module_info_c">
@@ -89,7 +275,7 @@
 						<!--module_info-->
 						<div class="module_info">
 							<div class="module_info_img">
-								<img src="{dede:global.cfg_templeturl /}/xkshop/images/007.png"
+								<img src="/dede/templets/xkshop/images/007.png"
 									width="48" height="48">
 							</div>
 							<div class="module_info_c">
@@ -101,7 +287,7 @@
 						<!--module_info-->
 						<div class="module_info">
 							<div class="module_info_img">
-								<img src="{dede:global.cfg_templeturl /}/xkshop/images/008.png"
+								<img src="/dede/templets/xkshop/images/008.png"
 									width="48" height="48">
 							</div>
 							<div class="module_info_c">
@@ -126,7 +312,7 @@
 				<div id="web_content">
 					<p>
 						该网站建设系统是一种全新的互联网应用模式，它一改过去传统的企业建站方式，不需企业编写任何程序或网页，无需学习任何相关语<img
-							src="{dede:global.cfg_templeturl /}/xkshop/images/prodcut_info_pic.jpg"
+							src="/dede/templets/xkshop/images/prodcut_info_pic.jpg"
 							width="378" height="260" align="right"
 							style="margin-left: 15px; margin-top: 15px;">言，也不需第三方代写或管理网站，只需应用系统所提供的各种强大丰富的功能模块，即可轻松生成企业个性化的精美网站。
 					</p>
@@ -152,7 +338,75 @@
 		</div>
 		<!--tem_show end-->
 	</div>
-	{dede:include filename="footer.htm"/}
+	<!--footer-->
+<div id="footer">
+	<!--flink-->
+	<div class="flink">
+		<div class="flink_t"></div>
+		<div class="flink_c">
+			<ul>
+				<li><strong>友情链接：</strong>
+				</li>
+				<a target="_blank" href="http://www.google.com/">Google</a> &nbsp;
+				<a target="_blank" href="http://www.baidu.com/">百度</a> &nbsp;
+			</ul>
+		</div>
+		<div class="flink_b"></div>
+	</div>
+	<!--flink end-->
+	<!--b_link-->
+	<div class="b_link">
+		<a href="http://www.flxkdns.com/help/pay.asp">付款方式</a> | <a
+			href="http://www.flxkdns.com/help/price.asp">价格总览</a> | <a
+			href="http://www.flxkdns.com/help/job.asp">诚聘英才</a> | <a
+			href="http://www.flxkdns.com/help/aboutus.asp">关于我们</a> | <a
+			href="http://www.flxkdns.com/help/contact.asp">联系我们</a> | <a
+			href="http://www.flxkdns.com/help/postQues.asp">咨询反馈</a>
+	</div>
+	<!--b_link end-->
+	<!--copyright-->
+	<div id="copyright">
+		<table width="930" border="0" align="center" cellpadding="0"
+			cellspacing="0" style="margin: 0 auto">
+			<tbody>
+				<tr>
+					<td><table border="0" cellspacing="0" cellpadding="0">
+							<tbody>
+								<tr>
+									<td><img
+										src="/dede/templets/xkshop/images/logof.gif"
+										width="150" height="67">
+									</td>
+									<td>&nbsp;</td>
+									<td>Copyright &#169; 2006-2011 http://www.flxkdns.com<br>
+										All Rights Reserved. <br> 版权所有：星空软件工作室</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+					<td>&nbsp;</td>
+					<td><table border="0" align="right" cellpadding="0"
+							cellspacing="0">
+							<tbody>
+								<tr>
+									<td>7 × 24小时服务热线：<strong class="or_font font_14">18701132241</strong>
+										传真：<br> 咨询信箱：<a href="mailto:changdejie2007@126.com">changdejie2007@126.com</a>
+										咨询QQ：736233152<br> <a href="http://www.miibeian.gov.cn/">京ICP备11030135号</a>
+
+
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+	</div>
+	<!--copyright end-->
+</div>
+<!--footer-->
 	<!--main end-->
 </body>
 </html>
